@@ -15,3 +15,19 @@ class Solution(object):
             else:
                 arr.append(str(i))
         return arr
+    
+    def scalable_fizz_buzz(n):
+        current_string = ""
+        arr = []
+        for i in range(1,n+1):
+            if i%3 == 0:
+                current_string += "Fizz"
+            if i%5 == 0:
+                current_string += "Buzz"
+            if current_string == "":
+                arr.append(i)
+            else:
+                arr.append(current_string)
+            current_string=""
+        return arr
+print(Solution.scalable_fizz_buzz(15))
