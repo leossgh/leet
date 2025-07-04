@@ -11,3 +11,16 @@ class Solution(object):
             else:
                 sums.append(sums[i-1]+nums[i])
         return sums
+class PythonSolution(object):
+    def runningSum(nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        sums = []
+        for i in range(len(nums)):
+            if i == 0:
+                sums.append(nums[i])
+            else:
+                sums.append(sums[i-1]+nums[i])
+        return sums
