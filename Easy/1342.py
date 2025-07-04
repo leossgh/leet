@@ -1,7 +1,7 @@
 class PythonSolution(object):
     def recursive(self,num,steps):
         print(steps)
-        if num!=0:
+        if num > 0:
             if num%2==0:
                 steps = self.recursive(PythonSolution,num/2,steps+1)
             else:
@@ -18,7 +18,7 @@ class PythonSolution(object):
 class RecursiveSolution(object):
     def recursive(self,num,steps):
         print(steps)
-        if num!=0:
+        if num > 0:
             if num%2==0:
                 steps = self.recursive(num/2,steps+1)
             else:
@@ -39,9 +39,9 @@ class Solution(object):
         :rtype: int
         """
         steps = 0
-        while num != 0:
+        while num > 0:
             if num%2 == 0:
-                num = num/2
+                num /= 2
                 steps+=1
             else:
                 num -= 1
