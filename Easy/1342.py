@@ -47,3 +47,19 @@ class Solution(object):
                 num -= 1
                 steps += 1
         return steps
+    
+class BitwiseSolution(object):
+    def numberOfSteps(self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+        steps = 0
+        while num > 0:
+            if (num&1)==0:
+                num >>= 1
+                steps+=1
+            else:
+                num -= 1
+                steps += 1
+        return steps
