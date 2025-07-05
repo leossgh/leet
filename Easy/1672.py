@@ -20,3 +20,12 @@ class PythonSolution(object):
             if sum(accounts[i])>richest[1]:
                 richest = [i,sum(accounts[i])]
         return richest[1]
+    
+
+
+
+        if use_as_last=='l1':
+            curr_link = ListNode(val=l1.val,next=None)
+        elif use_as_last=='l2':
+            curr_link = ListNode(val=l2.val,next=None)
+        prev_link.next = curr_link
