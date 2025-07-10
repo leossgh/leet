@@ -7,3 +7,4 @@ class Solution(object):
         words = s.split()
         last_word = words[-1]
         return len(list(last_word))
+    #3
